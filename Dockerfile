@@ -12,11 +12,13 @@ RUN mkdir /hbase-setup
 WORKDIR /hbase-setup
 
 ADD ./install-hbase.sh /hbase-setup/
+RUN chmod +x install-hbase.sh
 RUN ./install-hbase.sh
 
 ADD hbase-site.xml /opt/hbase/conf/hbase-site.xml
 
 ADD ./install-zookeeper.sh /hbase-setup/
+RUN chmod +x install-zookeeper.sh
 RUN ./install-zookeeper.sh
 
 ADD zoo.cfg /op/zookeeper/conf/zoo.cfg
@@ -36,5 +38,6 @@ WORKDIR /opt/
 
 VOLUME ["/opt/data/zookeeper", "/opt/data/hbase"]
 ADD start.sh /opt/
+RUN chmod +x start.sh
 
 CMD /opt/start.sh
