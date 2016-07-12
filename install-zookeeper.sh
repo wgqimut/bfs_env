@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /usr/bin/env bash
 
 wget --quiet http://mirror.bit.edu.cn/apache/zookeeper/zookeeper-3.4.8/zookeeper-3.4.8.tar.gz
 tar xzf zookeeper-3.4.8.tar.gz -C /opt/
