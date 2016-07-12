@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /bin/sh
 
 wget --quiet http://apache.fayea.com/hbase/1.1.5/hbase-1.1.5-bin.tar.gz
 tar xzf hbase-1.1.5-bin.tar.gz -C /opt/
