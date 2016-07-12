@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /bin/sh
 ./opt/hbase/bin/start-hbase.sh
 ./opt/zookeeper/bin/zkServer.sh start
 
